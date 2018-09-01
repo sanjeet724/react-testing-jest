@@ -1,0 +1,13 @@
+.undone-list-header, .undone-list-item, .done-list-header {
+    width: 250px;
+}
+
+.done-list-item {
+    width: 250px;
+    text-decoration: line-through;
+}
+
+
+.undone-list-checkbox {
+    float: right;
+}
