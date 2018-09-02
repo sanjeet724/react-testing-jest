@@ -3,11 +3,10 @@ import './App.css';
 import TaskItems from './components/taskItems'
 import DoneItems from './components/doneItems'
 import './components/listStyles.css'
-import State from './state';
+const State = require('./State');
 
 class App extends Component {
-
-  state = new State().initialState;
+  state = State.getInitialState();
 
   addTask = () => {
     if (this.state.toAdd.text) {

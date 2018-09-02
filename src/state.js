@@ -1,5 +1,5 @@
-class State {
-    initialState = {
+const State = {
+    _initialState: {
         tasks: [
             {
                 id: 1,
@@ -21,7 +21,11 @@ class State {
             text: "",
             placeholder: "What do you want to do ?"
         }
-    };
+    },
+    getInitialState() {
+        return this._initialState;
+    }
 };
 
-export default State;
+module.exports = State;
+

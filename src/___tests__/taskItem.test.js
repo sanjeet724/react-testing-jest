@@ -36,4 +36,5 @@ it('TaskItem Tests', () => {
         TestUtils.findRenderedDOMComponentWithTag(taskItem, 'input')
     );
     expect(task.status).toEqual('OK');
+
 });

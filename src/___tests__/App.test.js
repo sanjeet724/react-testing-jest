@@ -9,9 +9,8 @@ it('renders without crashing', () => {
 });
 
 describe("attributes", () => {
-  it("should init the app correctly", () => {
+  it("should initialize the app correctly", () => {
     const app = new App();
-    expect(app).toBeDefined();
     expect(app.state).toBeDefined();
     expect(app.state.tasks.length).toEqual(3);
   });
