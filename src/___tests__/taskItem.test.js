@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as TestUtils from 'react-dom/test-utils';
 import TaskItem from '../components/taskItem';
-import renderer from 'react-test-renderer';
 
 it('TaskItem Tests', () => {
     const task = {

@@ -5,7 +5,7 @@ import DoneItem from './doneItem'
 class DoneItems extends Component {
     render() {
         const { tasks } = this.props;
-        const listHeader = tasks.length > 0 ? "Done" : null;
+        const listHeader = "Done"
         return (
             <div className="list-group">
                 <h5 className="done-list-header">{listHeader}</h5>
