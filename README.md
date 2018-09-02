@@ -1,7 +1,7 @@
 # react-todo-app
 
 ## usage
-* run **npm i axios** (to make some async calls)
+* run **npm i axios** (used to demnonstrate async calls)
 * run **npm install** to install node modules needed for the app
 * open **localhost://3000** in browser to launch the app
 
