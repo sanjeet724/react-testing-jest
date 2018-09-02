@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as TestUtils from 'react-dom/test-utils';
 import TaskItem from '../components/taskItem';
+import renderer from 'react-test-renderer';
 
 it('TaskItem Tests', () => {
     const task = {
@@ -36,5 +37,4 @@ it('TaskItem Tests', () => {
         TestUtils.findRenderedDOMComponentWithTag(taskItem, 'input')
     );
     expect(task.status).toEqual('OK');
-
 });

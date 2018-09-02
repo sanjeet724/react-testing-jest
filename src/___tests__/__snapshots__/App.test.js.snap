@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component matches the snapshot 1`] = `
+<div
+  className="App container"
+>
+  <h1
+    className="App-header"
+  >
+    My To-Do App
+  </h1>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group-prepend"
+    >
+      <button
+        className="btn btn-primary m-2"
+        onClick={[Function]}
+      >
+        Add Something
+      </button>
+    </div>
+    <input
+      className="form-control m-2"
+      maxLength="30"
+      onChange={[Function]}
+      onKeyPress={[Function]}
+      placeholder="What do you want to do ?"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="task-container-todo"
+  >
+    <div
+      className="list-group"
+    >
+      <h5
+        className="undone-list-header"
+      >
+        Up Coming
+      </h5>
+      <div>
+        <li
+          className="list-group-item undone-list-item list-group-item-primary"
+        >
+          Start investing
+          <input
+            className="m-2 undone-list-checkbox"
+            onClick={[Function]}
+            type="checkbox"
+          />
+        </li>
+      </div>
+      <div>
+        <li
+          className="list-group-item undone-list-item list-group-item-primary"
+        >
+          Find your passion
+          <input
+            className="m-2 undone-list-checkbox"
+            onClick={[Function]}
+            type="checkbox"
+          />
+        </li>
+      </div>
+    </div>
+  </div>
+  <div
+    className="task-container-done"
+  >
+    <div
+      className="list-group"
+    >
+      <h5
+        className="done-list-header"
+      >
+        Done
+      </h5>
+      <div>
+        <li
+          className="list-group-item done-list-item list-group-item-success"
+        >
+          Go to the gym
+        </li>
+      </div>
+    </div>
+  </div>
+</div>
+`;
