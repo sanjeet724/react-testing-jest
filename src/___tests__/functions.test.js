@@ -14,4 +14,25 @@ describe("Add Numbers", () => {
     it("should not add objects", () => {
         expect(functions.add({}, {})).toBe(null);
     });
+
+    // async calls - example 1 (promises)
+    it("fetched user should be Ervin Howell - promises", () => {
+        expect.assertions(1);
+        return functions.getUserName().then(data => {
+            expect(data).toEqual("Ervin Howell");
+        });
+    });
+
+    // async calls - example 2 (resolves in promises)
+    it('Works with resolves', () => {
+        expect.assertions(1);
+        return expect(functions.getUserName()).resolves.toEqual("Ervin Howell");
+    });
+
+    // async calls - async/await
+    it("using async/await", async () => {
+        expect.assertions(1);
+        const data = await functions.getUserName();
+        expect(data).toEqual("Ervin Howell");
+    });
 });
