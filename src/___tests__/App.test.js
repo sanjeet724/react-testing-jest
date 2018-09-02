@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from '../App';
 import renderer from 'react-test-renderer';
+import * as TestUtils from 'react-dom/test-utils';
+
 
 // smoke test
 it('renders without crashing', () => {
@@ -10,11 +12,24 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-describe("attributes", () => {
+describe("The App", () => {
   it("should initialize the app correctly", () => {
-    const app = new App();
-    expect(app.state).toBeDefined();
-    expect(app.state.tasks.length).toEqual(3);
+    const myApp = new App();
+    expect(myApp).toBeDefined();
+    expect(myApp.state).toBeDefined();
+    expect(myApp.state.tasks.length).toEqual(3);
+  });
+
+  it("can add a new task", () => {
+    // render the app
+    const myApp = TestUtils.renderIntoDocument(<App />);
+    // create a new task
+    let toAdd = { ...myApp.state };
+    toAdd.text = "adding a new task - test";
+    myApp.setState({ toAdd });
+    // add the task
+    myApp.addTask();
+    expect(myApp.state.tasks.length).toEqual(4);
   });
 });
 

@@ -6,7 +6,18 @@ import './components/listStyles.css'
 const State = require('./State');
 
 class App extends Component {
-  state = State.getInitialState();
+  constructor(props) {
+    super(props);
+    this.state = State.getInitialState();
+  };
+
+  componentDidMount = () => {
+    // console.log("component mounted...");
+  };
+
+  componentDidUpdate = () => {
+    // console.log("component did update...")
+  };
 
   addTask = () => {
     if (this.state.toAdd.text) {

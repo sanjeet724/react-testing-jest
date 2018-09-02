@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskItem Component matches the snapshot 1`] = `
+<div>
+  <li
+    className="list-group-item undone-list-item list-group-item-primary"
+  >
+    Go to the gym
+    <input
+      className="m-2 undone-list-checkbox"
+      onClick={[Function]}
+      type="checkbox"
+    />
+  </li>
+</div>
+`;
+
+exports[`TaskItem Component matches the snapshot 2`] = `
+<div>
+  <li
+    className="list-group-item undone-list-item list-group-item-primary"
+  >
+    Start investing
+    <input
+      className="m-2 undone-list-checkbox"
+      onClick={[Function]}
+      type="checkbox"
+    />
+  </li>
+</div>
+`;
+
+exports[`TaskItem Component matches the snapshot 3`] = `
+<div>
+  <li
+    className="list-group-item undone-list-item list-group-item-primary"
+  >
+    Find your passion
+    <input
+      className="m-2 undone-list-checkbox"
+      onClick={[Function]}
+      type="checkbox"
+    />
+  </li>
+</div>
+`;
