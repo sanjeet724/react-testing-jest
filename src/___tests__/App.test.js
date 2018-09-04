@@ -13,7 +13,7 @@ it('renders without crashing', () => {
 });
 
 describe("The App", () => {
-  it("should initialize the app correctly", () => {
+  xit("should initialize the app correctly", () => {
     const myApp = new App();
     expect(myApp).toBeDefined();
     expect(myApp.state).toBeDefined();

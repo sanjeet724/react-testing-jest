@@ -6,7 +6,7 @@ import renderer from 'react-test-renderer';
 const State = require('../State');
 
 describe("TaskItem", () => {
-    it("should handle onClick event", () => {
+    fit("should handle onClick event", () => {
         const task = {
             id: 1,
             text: "Testing the taskItem",
@@ -21,6 +21,7 @@ describe("TaskItem", () => {
             <TaskItem task={task} onTaskCompleted={onTaskCompleted} />
         );
 
+        // verify if the  DOM node was created
         const taskItemNode = ReactDOM.findDOMNode(taskItem);
         expect(taskItemNode).toBeDefined();
 
@@ -34,10 +35,10 @@ describe("TaskItem", () => {
         expect(input_item).toBeDefined();
         expect(input_item.checked).toBeFalsy();
 
-        // Simulate a click and verify that it changes the status
-        TestUtils.Simulate.click(
-            TestUtils.findRenderedDOMComponentWithTag(taskItem, 'input')
-        );
+        // Simulate a click on the checkbox
+        TestUtils.Simulate.click(input_item);
+
+        //verify that it changes the status
         expect(task.status).toEqual('OK');
     });
 });
@@ -48,7 +49,9 @@ describe("TaskItem Component", () => {
         const onTaskCompleted = () => { };
         const tasks = State.getInitialState().tasks;
         tasks.forEach(task => {
-            const tree = renderer.create(<TaskItem task={task} onTaskCompleted={onTaskCompleted} />).toJSON();
+            const tree = renderer.create(
+                <TaskItem task={task}
+                    onTaskCompleted={onTaskCompleted} />).toJSON();
             expect(tree).toMatchSnapshot();
         });
     })
