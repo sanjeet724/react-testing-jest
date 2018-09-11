@@ -59,7 +59,19 @@ exports[`App Component matches the snapshot 1`] = `
         <li
           className="list-group-item undone-list-item list-group-item-primary"
         >
-          Find your passion
+          Buy Apple Watch 4
+          <input
+            className="m-2 undone-list-checkbox"
+            onClick={[Function]}
+            type="checkbox"
+          />
+        </li>
+      </div>
+      <div>
+        <li
+          className="list-group-item undone-list-item list-group-item-primary"
+        >
+          Dev talk on JEST
           <input
             className="m-2 undone-list-checkbox"
             onClick={[Function]}
@@ -85,6 +97,13 @@ exports[`App Component matches the snapshot 1`] = `
           className="list-group-item done-list-item list-group-item-success"
         >
           Go to the gym
+        </li>
+      </div>
+      <div>
+        <li
+          className="list-group-item done-list-item list-group-item-success"
+        >
+          Learn JEST
         </li>
       </div>
     </div>

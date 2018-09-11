@@ -13,7 +13,17 @@ const State = {
             },
             {
                 id: 3,
-                text: "Find your passion",
+                text: "Learn JEST",
+                status: "OK"
+            },
+            {
+                id: 4,
+                text: "Buy Apple Watch 4",
+                status: "NOK"
+            },
+            {
+                id: 5,
+                text: "Dev talk on JEST",
                 status: "NOK"
             }
         ],

@@ -29,7 +29,7 @@ describe("The App", () => {
     myApp.setState({ toAdd });
     // add the task
     myApp.addTask();
-    expect(myApp.state.tasks.length).toEqual(4);
+    expect(myApp.state.tasks.length).toEqual(6);
   });
 });
 
